@@ -9,3 +9,6 @@ from . import example_module
 
 TEST = pd.DataFrame(np.ones(10))
 Y = example_module.increment(example_module.x)
+def check_null(X):
+  return X.isnull().sum()
+setup = pd.set_option('display.max_columns', 999) 
