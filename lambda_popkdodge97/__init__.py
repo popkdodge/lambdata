@@ -7,8 +7,14 @@ import pandas as pd
 import numpy as np
 from . import example_module
 
+
+#module
 TEST = pd.DataFrame(np.ones(10))
 Y = example_module.increment(example_module.x)
+setup = pd.set_option.display.max_columns = 999
+
+#functions
 def check_null(X):
   return X.isnull().sum()
-setup = pd.set_option('display.max_columns', 999) 
+def explore(X):
+  return X.describe(include='all')
