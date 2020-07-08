@@ -11,7 +11,7 @@ from . import example_module
 #module
 TEST = pd.DataFrame(np.ones(10))
 Y = example_module.increment(example_module.x)
-setup = pd.set_option.display.max_columns = 999
+setup = pd.options.display.max_columns = 999
 
 #functions
 def check_null(X):
